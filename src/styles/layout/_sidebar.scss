@@ -1,0 +1,141 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 12.5%;
+  overflow: hidden;
+  overflow-x: hidden;
+  background: $light-color;
+
+  .name {
+    @include flexCenter();
+
+    height: 160px;
+    cursor: default;
+
+    .logo {
+      width: 40%;
+      cursor: pointer;
+      position: relative;
+
+      .st0 {
+        overflow: hidden;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover,
+      &.active {
+        .st0 {
+          fill: $dark-blue;
+          transition: all 0.5s ease-in-out;
+        }
+        svg {
+          -webkit-filter: drop-shadow($dark-shadow);
+          filter: drop-shadow($dark-shadow);
+        }
+      }
+    }
+  }
+
+  .tabs {
+    font-size: 8px;
+    color: $dark-blue;
+    position: relative;
+
+    .menu-item {
+      @include flexCenter();
+
+      margin-bottom: 1em;
+      text-decoration: none;
+      color: $medium-grey;
+
+      .icon-box {
+        @include flexCenter();
+
+        position: relative;
+        margin: 1em;
+        height: 6em;
+        width: 6em;
+        background: $light-blue;
+        border-radius: 1.5em;
+        overflow: hidden;
+
+        &:before {
+          content: "";
+          position: absolute;
+          height: 140%;
+          width: 140%;
+          background: $dark-blue;
+          transform: rotate(45deg);
+          top: -120%;
+          left: 90%;
+        }
+      }
+
+      .icon {
+        height: 2rem;
+        color: $dark-blue;
+        transition: 0.2s linear;
+      }
+
+      &:hover {
+        > .icon-box {
+          &::before {
+            animation: aaa 0.7s 1;
+            top: -10%;
+            left: -20%;
+            @keyframes aaa {
+              0% {
+                left: -120%;
+                top: 90%;
+              }
+              50% {
+                left: 10%;
+                top: -40%;
+              }
+              100% {
+                left: -10%;
+                top: -20%;
+              }
+            }
+          }
+        }
+      }
+
+      &:hover,
+      &.active {
+        .icon-box {
+          box-shadow: $dark-shadow;
+        }
+
+        .icon {
+          fill: $light-color;
+          transform: scale(1.2);
+        }
+
+        h1 {
+          color: $dark-blue;
+        }
+      }
+
+      &.active {
+        .icon-box {
+          background: $dark-blue;
+        }
+      }
+    }
+
+    .animation {
+      position: absolute;
+      top: 8px;
+      right: -32px;
+      height: 6em;
+      width: 1em;
+      border-radius: 4px;
+      background: $dark-blue;
+      box-shadow: $dark-shadow;
+    }
+  }
+}

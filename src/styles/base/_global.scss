@@ -1,0 +1,17 @@
+html {
+  font-family: $font-normal;
+  font-size: 8px;
+  font-weight: 400;
+  background: $light-blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

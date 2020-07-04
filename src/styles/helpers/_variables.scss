@@ -1,0 +1,23 @@
+// COLORS
+$dark-blue: #263238;
+$medium-grey: #677277;
+$light-blue: #f9fbff;
+$light-color: #fcfcfc;
+$dark-pink: #e91e63;
+$light-pink: #fff8fe;
+$dark-shadow: 2px 2px 12px #202b3048, -2px -2px 12px #2c3a4044;
+
+// BREAKPOINTS
+$breakpoint-desktop: 1200px;
+$breakpoint-laptop: 950px;
+$breakpoint-desktop: 768px;
+$breakpoint-desktop: 400px;
+// @media (max-width: $breakpoint) {}
+
+// FONTS
+$font-normal: "Proxima-Nova", "Gotham-Light", "Helvetica Neue", "Helvetica",
+  sans-serif;
+$font-bold: "Proxima-Nova-Bold", "Gotham-Bold", "Helvetica Neue", "Helvetica",
+  sans-serif;
+$font-bold: "Proxima-Nova-Black", "Gotham-Black", "Helvetica Neue", "Helvetica",
+  sans-serif;
