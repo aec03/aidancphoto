@@ -1,5 +1,6 @@
 // COLORS
 $dark-blue: #263238;
+$dark-grey: #4e4e4e;
 $medium-grey: #677277;
 $light-blue: #f9fbff;
 $light-color: #fcfcfc;
@@ -15,11 +16,4 @@ $breakpoint-desktop: 400px;
 // @media (max-width: $breakpoint) {}
 
 // FONTS
-$font-light: "Proxima-Nova-Thin", "Gotham-Light", "Helvetica Neue", "Helvetica",
-  sans-serif;
-$font-normal: "Proxima-Nova", "Gotham-Light", "Helvetica Neue", "Helvetica",
-  sans-serif;
-$font-bold: "Proxima-Nova-Bold", "Gotham-Bold", "Helvetica Neue", "Helvetica",
-  sans-serif;
-$font-bold: "Proxima-Nova-Black", "Gotham-Black", "Helvetica Neue", "Helvetica",
-  sans-serif;
+$fonts: sofia-pro, sans-serif;
