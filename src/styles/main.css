@@ -1,0 +1,297 @@
+@import url("https://use.typekit.net/nkn7lhw.css");
+html {
+  font-family: sofia-pro, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 8px;
+  background: #f9fbff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 12.5%;
+  overflow: hidden;
+  overflow-x: hidden;
+  background: #fcfcfc;
+  border-right: 1px solid #d2d2d2;
+}
+
+.sidebar .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 160px;
+  cursor: default;
+}
+
+.sidebar .name .logo {
+  width: 80px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebar .name .logo .st0 {
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar .name .logo:hover .st0, .sidebar .name .logo.active .st0 {
+  fill: #263238;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.sidebar .name .logo:hover svg, .sidebar .name .logo.active svg {
+  -webkit-filter: drop-shadow(2px 2px 12px #202b3048, -2px -2px 12px #2c3a4044);
+  filter: drop-shadow(2px 2px 12px #202b3048, -2px -2px 12px #2c3a4044);
+}
+
+.sidebar .tabs {
+  font-size: 8px;
+  color: #263238;
+  position: relative;
+}
+
+.sidebar .tabs .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-bottom: 1em;
+  text-decoration: none;
+  color: #677277;
+}
+
+.sidebar .tabs .menu-item .icon-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  position: relative;
+  margin: 1em;
+  height: 6em;
+  width: 6em;
+  background: #f9fbff;
+  border-radius: 1.5em;
+  overflow: hidden;
+}
+
+.sidebar .tabs .menu-item .icon-box:before {
+  content: "";
+  position: absolute;
+  height: 140%;
+  width: 140%;
+  background: #263238;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: -120%;
+  left: 90%;
+}
+
+.sidebar .tabs .menu-item .icon {
+  height: 2rem;
+  color: #263238;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.sidebar .tabs .menu-item:hover > .icon-box::before {
+  -webkit-animation: aaa 0.7s 1;
+          animation: aaa 0.7s 1;
+  top: -10%;
+  left: -20%;
+}
+
+@-webkit-keyframes aaa {
+  0% {
+    left: -120%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -40%;
+  }
+  100% {
+    left: -10%;
+    top: -20%;
+  }
+}
+
+@keyframes aaa {
+  0% {
+    left: -120%;
+    top: 90%;
+  }
+  50% {
+    left: 10%;
+    top: -40%;
+  }
+  100% {
+    left: -10%;
+    top: -20%;
+  }
+}
+
+.sidebar .tabs .menu-item:hover .icon-box, .sidebar .tabs .menu-item.active .icon-box {
+  -webkit-box-shadow: 2px 2px 12px #202b3048, -2px -2px 12px #2c3a4044;
+          box-shadow: 2px 2px 12px #202b3048, -2px -2px 12px #2c3a4044;
+}
+
+.sidebar .tabs .menu-item:hover .icon, .sidebar .tabs .menu-item.active .icon {
+  fill: #fcfcfc;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.sidebar .tabs .menu-item:hover h1, .sidebar .tabs .menu-item.active h1 {
+  color: #263238;
+}
+
+.sidebar .tabs .menu-item.active .icon-box {
+  background: #263238;
+}
+
+.sidebar .tabs .animation {
+  position: absolute;
+  top: 8px;
+  right: -32px;
+  height: 6em;
+  width: 1em;
+  border-radius: 4px;
+  background: #263238;
+  -webkit-box-shadow: 2px 2px 12px #202b3048, -2px -2px 12px #2c3a4044;
+          box-shadow: 2px 2px 12px #202b3048, -2px -2px 12px #2c3a4044;
+}
+
+main {
+  height: 100vh;
+  margin-left: 12.5%;
+  background: #f9fbff;
+  overflow-y: scroll;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+#games .container {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 10em;
+  padding: 0 10em;
+}
+
+#games .container .header {
+  height: 10em;
+  margin-bottom: 10em;
+}
+
+#games .container .items-container {
+  width: 100%;
+  height: calc(100% - 20em);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  gap: 5em;
+}
+
+#games .container .items-container .grid-item {
+  border: 1px solid #d2d2d2;
+  border-radius: 1em;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#games .container .items-container .grid-item .box {
+  height: 30%;
+  background: #e6e6e6;
+}
+
+#games .container .items-container .grid-item:hover {
+  border: 1px solid #263238;
+}
+
+#games .container .items-container .grid-item:hover .box {
+  background: #263238;
+}
+/*# sourceMappingURL=main.css.map */

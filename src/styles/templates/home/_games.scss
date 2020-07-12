@@ -1,0 +1,42 @@
+#games {
+  .container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 10em;
+    padding: 0 10em;
+
+    .header {
+      height: 10em;
+      margin-bottom: 10em;
+    }
+
+    .items-container {
+      width: 100%;
+      height: calc(100% - 20em);
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 5em;
+
+      .grid-item {
+        border: 1px solid #d2d2d2;
+        border-radius: 1em;
+        overflow: hidden;
+        cursor: pointer;
+
+        .box {
+          height: 30%;
+          background: #e6e6e6;
+        }
+
+        &:hover {
+          border: 1px solid $dark-blue;
+
+          .box {
+            background: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+}

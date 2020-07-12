@@ -7,6 +7,7 @@
   overflow: hidden;
   overflow-x: hidden;
   background: $light-color;
+  border-right: 1px solid #d2d2d2;
 
   .name {
     @include flexCenter();
